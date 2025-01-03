@@ -1,6 +1,6 @@
 import sqlite3 as sql
 
-def init_db():
+def init_db(db):
   with sql.connect(db) as conn:
     _cur = conn.cursor()
     

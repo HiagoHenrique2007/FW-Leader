@@ -4,7 +4,7 @@ import sqlite3 as sql
 
 home = Blueprint('HOME', __name__)
 
-db = 'C:\\Users\\empty\\OneDrive\\vs-code\\pedidos-chatgpt\\consultoria-financeira\\db\\depoimentos.db'
+db = './../db/depoimentos.db'
 create_table = '''
     CREATE TABLE IF NOT EXISTS depoimentos (
         id INTEGER PRIMARY KEY AUTOINCREMENT,

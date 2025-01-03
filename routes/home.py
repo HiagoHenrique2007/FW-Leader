@@ -5,6 +5,7 @@ import sqlite3 as sql
 home = Blueprint('HOME', __name__)
 
 db = './../db/depoimentos.db'
+global db
 create_table = '''
     CREATE TABLE IF NOT EXISTS depoimentos (
         id INTEGER PRIMARY KEY AUTOINCREMENT,

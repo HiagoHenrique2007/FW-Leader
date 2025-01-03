@@ -28,6 +28,7 @@ def home_page():
         _cur = conn.cursor()
 
         try:
+            _cur.execute(create_table)
             _cur.execute(get_depoimentos)
             depoimentos = _cur.fetchall()
             _cur.close()
@@ -36,8 +37,10 @@ def home_page():
         except sql.Error as e:
             print(f'ERRO AO BUSCAR OS DEPOIMENTOS: {e}')
 
-
-    return render_template('index.html', depoimentos=depoimentos)
+    if depoimentos:
+        return render_template('index.html', depoimentos=depoimentos)
+    else:
+        return render_template('index.html')
 
 @home.route('/dar-depoimento', methods=['GET', 'POST'])
 def add_depoimento():

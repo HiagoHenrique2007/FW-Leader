@@ -3,10 +3,6 @@ from routes.home import home
 from routes.sobre import about
 from routes.blog import blog
 from routes.contato import contato
-from init_db import _init_db
-
-db = './db/depoimentos.db'
-_init_db(db)
 
 app = Flask(__name__)
 

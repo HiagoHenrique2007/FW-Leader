@@ -1,0 +1,27 @@
+{
+    "1": {
+        "name": "João Silva ",
+        "function": "CEO e Fundador",
+        "description": "Especialista em planejamento financeiro e gestão de investimentos, com mais de 15 anos de experiência no mercado financeiro. João é conhecido por sua abordagem estratégica e orientada a resultados."
+    },
+    "2": {
+        "name": "Ana Ribeiro ",
+        "function": "Diretora de Operações",
+        "description": "Responsável pela coordenação dos serviços oferecidos e gestão de projetos. Ana possui sólida experiência em análise de processos e otimização de recursos empresariais."
+    },
+    "3": {
+        "name": "Carlos Mendes",
+        "function": "Consultor Sênior",
+        "description": "Consultor financeiro com 10 anos de experiência em consultorias para empresas de médio e grande porte. Carlos é especialista em análise de mercado e estratégias de crescimento."
+    },
+    "4": {
+        "name": "Mariana Costa",
+        "function": "Educadora Financeira",
+        "description": "Formada em Economia, Mariana é apaixonada por ensinar. Ela lidera os workshops e cursos, trazendo clareza e didática às informações financeiras."
+    },
+    "5": {
+        "name": "Felipe Martins",
+        "function": "Especialista em Investimentos",
+        "description": "Felipe ajuda os clientes a encontrar as melhores oportunidades no mercado financeiro. Ele tem certificação CFP® e é um entusiasta da diversificação de investimentos."
+    }
+}

@@ -1,0 +1,14 @@
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgb(35, 206, 236);
+}
+
+nav {
+    left: 0;
+    top: 0;
+    height: 99.8vh;
+    width: 35%;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src=" {{ url_for('static', filename='js/main.js') }} " defer ></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FW Leader</title>
+
+</head>
+
+<body class=" m-0 ">
+    {% include 'header.html' %}
+    <div id="servicos" class=" mt-16 ">
+        <h2 class=" p-4 text-xl text-white ">Nossos Serviços</h2>
+        <div class=" mt-1 ">
+            <h3 class="  text-xl text-left text-white ml-4 ">Planejamento Financeiro Pessoal</h3>
+            <p class=" text-xl text-white p-4 ">
+                Auxiliamos indivíduos a gerenciar suas finanças pessoais de forma eficaz,
+                 com foco em organização, economia e investimentos inteligentes para alcançar objetivos de curto, médio e longo prazo.
+            </p>
+        </div>
+
+        <div class=" mt-4 ">
+            <h3 class=" text-xl text-left text-white ml-4 ">Consultoria para Empresas</h3>
+            <p class=" text-xl text-white p-4 ">
+                Oferecemos análises detalhadas das finanças empresariais, identificando oportunidades de otimização de custos,
+                 aumento de lucros e estratégias para garantir a saúde financeira do negócio.
+            </p>
+        </div>
+
+        <div class=" mt-4 ">
+            <h3 class=" text-xl text-left text-white ml-4 ">Educação Financeira</h3>
+            <p class=" text-xl text-white p-4 ">
+                Realizamos workshops, cursos online e palestras para promover o conhecimento sobre finanças,
+                 investimentos e estratégias de crescimento financeiro sustentável.
+            </p>
+        </div>
+    </div>
+    <div id="depoimentos" class=" flex flex-col items-center ">
+        <div id="depoimets-title">
+            <h2 class=" text-center text-xl text-white my-6 " >
+                Depoimentos
+            </h2>
+        </div>
+        {% for depoimento in depoimentos %}
+            <div class=" box-depoimento my-2 px-4 pb-2 rounded-xl ">
+                <div class=" flex items-center ">
+                    <div>
+                        <img class=" size-10 my-1" src=" {{ url_for('static', filename='imgs/icon.png') }} " alt="foto da {{ depoimento[0] }}">                        
+                    </div>
+                    <div class=" flex flex-col ">
+                        <h5 class=" text-lg ">
+                            {{ depoimento[0] }}
+                        </h5>
+                        <h6 class=" text-sm -mt-1 ">
+                            {{ depoimento[1] }}
+                        </h6>
+                    </div>
+
+                </div>
+                <div>
+                    <p class=" text-lg ">
+                        {{ depoimento[2] }}
+                    </p>
+                </div>
+            </div>
+        {% endfor %}
+        <br>
+        <a href=" {{ url_for('HOME.add_depoimento') }} ">
+            <button id='btn-add-depoimento' class=" bg-white text-md text-black rounded-xl mt-4" >Dar Seu Depoimento</button>
+        </a>
+        <br>
+    </div>
+
+</body>
+</html>

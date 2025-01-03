@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href=" {{ url_for('static', filename='css/contato.css') }} ">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+</head>
+<body class="p-6">
+    <h1 class=" text-center text-xl mb-4 " >Contato</h1>
+    <h2 class=" text-center text-lg mb-6 ">
+        Para entrar em contato conosco, nos mande um email preenchendo o formulario abaixo:
+    </h2>
+
+    <div id="form-container" class=" mx-auto rounded-lg bg-sky-100 p-16 " >
+        <form action="/contato" method="POST" >
+            <label for="name" class=" text-black ">
+                Nome:
+            </label>
+            <br>
+            <input type="text" name="name" required class=" bg-black text-white rounded-md ">
+            <br>
+            
+            <label for="email" class=" text-black ">
+                Email:
+            </label>
+            <br>
+            <input type="email" name="email" required class=" bg-black text-white rounded-md ">
+            <br>
+
+            <label for="mensagem" class=" text-black ">
+                Mensagem:
+            </label>
+            <br>
+            <textarea name="message" required class=" bg-black text-white rounded-md"></textarea>
+            <br>
+            <br>
+            <button type="submit" class=" bg-black text-white rounded-md ">
+                Enviar
+            </button>
+        </form>
+    </div>
+</body>
+</html>

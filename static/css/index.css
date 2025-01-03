@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(32, 32, 32);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgb(35, 206, 236);
+}
+
+nav {
+    left: 0;
+    top: 0;
+    height: 99.8vh;
+    width: 35%;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+h1, h3 {
+    font-weight: 600;
+}
+
+#btn-contato {
+    width: 4rem;
+    height: 2rem;
+}
+
+#btn-nav-bar {
+    position: relative;
+}
+
+#depoimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#btn-add-depoimento {
+    width: 14rem;
+    height: 2.5rem;
+}
+
+.box-depoimento {
+    background-color: rgb(73, 188, 208);
+    flex: 0 0 100%;
+    width: 90%;
+    height: 6rem;
+}

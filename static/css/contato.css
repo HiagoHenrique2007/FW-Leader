@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+h1 {
+    letter-spacing: 12%;
+}
+
+#form-container {
+    width: 50%;
+    height: 70vh;
+}

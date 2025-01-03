@@ -23,7 +23,7 @@ get_depoimentos = '''
 
 @home.route('/')
 def home_page():
-    fm = FileManager('C:\\Users\\empty\\OneDrive\\vs-code\\pedidos-chatgpt\\consultoria-financeira\\db\\depoimentos.json')
+    
     with sql.connect(db) as conn:
         _cur = conn.cursor()
 
